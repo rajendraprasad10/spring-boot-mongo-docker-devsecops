@@ -23,7 +23,11 @@
         <logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
 
         <!-- Sonar (DO NOT hardcode creds in real projects) -->
-        <sonar.host.url>http://localhost:9000</sonar.host.url>
+	<sonar.host.url>http://localhost:9000</sonar.host.url>
+	<sonar.login>admin</sonar.login>
+        <sonar.password>Welcome@123</sonar.password>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <!-- Dependency Management -->
