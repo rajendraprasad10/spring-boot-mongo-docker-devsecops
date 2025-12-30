@@ -25,7 +25,7 @@ ENV PROJECT_HOME=/opt/app
 WORKDIR $PROJECT_HOME
 
 # Copy the JAR file from the previous stage
-COPY --from=build /app/target/spring-boot-mongo-1.0.jar $PROJECT_HOME/spring-boot-mongo.jar
+COPY --from=build /app/target/spring-boot-mongo-1.0.0.jar $PROJECT_HOME/spring-boot-mongo.jar
 
 # Expose port 8080
 EXPOSE 8080
