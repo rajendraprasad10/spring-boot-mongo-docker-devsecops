@@ -20,7 +20,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <!-- Match Spring Boot 2.1.x -->
+        <!-- Java -->
         <java.version>8</java.version>
 
         <!-- Spring Cloud -->
@@ -28,6 +28,11 @@
 
         <!-- Logging -->
         <logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
+
+        <!-- SonarQube Configuration -->
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>Welcome@123</sonar.password>
     </properties>
 
     <!-- Dependency Management -->
@@ -46,25 +51,21 @@
     <!-- Dependencies -->
     <dependencies>
 
-        <!-- Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- MongoDB -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
-        <!-- Thymeleaf -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!-- WebJars -->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
@@ -77,20 +78,17 @@
             <version>3.2.1</version>
         </dependency>
 
-        <!-- Distributed Tracing -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
 
-        <!-- Logstash Encoder -->
         <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>${logstash-logback-encoder.version}</version>
         </dependency>
 
-        <!-- Tests -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -102,13 +100,10 @@
     <!-- Build -->
     <build>
         <plugins>
-
-            <!-- Spring Boot Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
         </plugins>
     </build>
 
