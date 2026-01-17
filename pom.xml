@@ -27,7 +27,7 @@
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 
         <!-- Logging -->
-        <logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
+        <logstash-logback-encoder.version>6.6</logstash-logback-encoder.version>
 
         <!-- SonarQube Configuration -->
         <sonar.host.url>http://localhost:9000</sonar.host.url>
